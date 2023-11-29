@@ -4,7 +4,7 @@ on:
     branches:
       - 'main'
     paths:
-      - 'hello-world2.py'
+      - 'hello-world2.py' #Especifico sobre que archivo se va a ejecutar el actions
 jobs:
   build-python:
     runs-on: ubuntu-latest
