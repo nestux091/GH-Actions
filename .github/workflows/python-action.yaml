@@ -1,3 +1,4 @@
+name: Mi primer GitHub Actions
 on:
   push:
     branches:
