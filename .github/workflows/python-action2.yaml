@@ -1,0 +1,22 @@
+name: Mi segundo GitHub Actions
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  build-python:
+    runs-on: ubuntu-latest
+    steps:
+        - name: checkout-repo
+          uses: actions/checkout@v4
+
+        - name: Setup Python
+          uses: actions/setup-python@v4
+          with:
+            python-version: '3.10'
+
+        - name: Definir Variable
+          run: echo "USERNAME=${{ github.actor}}" >> $GITHUB_ENV
+        
+        - name: Print Username de GitHub
+          run: python hello-world2.py
