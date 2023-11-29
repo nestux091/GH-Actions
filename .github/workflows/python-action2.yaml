@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - 'main'
+    paths:
+      - 'hello-world2.py'
 jobs:
   build-python:
     runs-on: ubuntu-latest
